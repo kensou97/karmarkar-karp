@@ -1,4 +1,4 @@
-package main
+package ldm
 
 type PartitionHeap []Partition
 
