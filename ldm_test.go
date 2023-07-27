@@ -32,6 +32,11 @@ func TestKarmarkarKarp(t *testing.T) {
 			k:        3,
 			expected: [][]int{{5, 3, 3}, {5, 1, 4}, {4, 5}},
 		},
+		{
+			weights:  []int{5, 5, 5, 4, 4, 3, 3, 1},
+			k:        9,
+			expected: [][]int{{5}, {5}, {5}, {4}, {4}, {3}, {3}, {1}, {}},
+		},
 	}
 	for _, c := range cases {
 		var members []Member
